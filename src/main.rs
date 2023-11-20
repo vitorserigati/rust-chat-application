@@ -35,7 +35,7 @@ async fn main() {
                         let (msg, other_addr ) = result.unwrap();
 
                         if addr != other_addr {
-                        writer.write_all(&msg.as_bytes()).await.unwrap();
+                        writer.write_all(msg.as_bytes()).await.unwrap();
                         }
                     }
                 }
